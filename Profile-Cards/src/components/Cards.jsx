@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cards = ({emp}) => {
+const Cards = ({emp, viewProfile}) => {
   return (
     <div>
         <div className='card'>
@@ -9,6 +9,7 @@ const Cards = ({emp}) => {
         <div>
             <h4>Name: {emp.name}</h4>
             <h4>Role: {emp.role}</h4>
+            <button onClick={viewProfile}>View Profile</button>
         </div>
     </div>
   )

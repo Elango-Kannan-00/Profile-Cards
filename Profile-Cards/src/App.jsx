@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Cards from './Cards.jsx';
+import Cards from './components/cards.jsx';
 import './App.css';
+import ProfileView from './components/ProfileView.jsx';
 
 function App() {
   const [details, setDetails] = useState([]);
+  const [selectedEmp, setSelectedEmp] = useState(null);
 
   useEffect(() => {
     fetch("/data/employees.json")
@@ -17,9 +19,18 @@ function App() {
       <h1>Employee Profile Page</h1>
       <div>
         {details.map(emp => (
-          <Cards key={emp.id} emp={emp} />
+          <Cards 
+            key={emp.id} 
+            emp={emp} 
+            viewProfile={() => setSelectedEmp(emp)}
+        />
         ))}
       </div>
+
+      <ProfileView 
+        emp={selectedEmp}
+        onClose={() => setSelectedEmp(null)}
+      />
     </div>
   );
 }
