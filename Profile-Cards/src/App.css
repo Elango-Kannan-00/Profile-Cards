@@ -146,7 +146,6 @@ body {
   color: rgb(233, 83, 83)
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 900px) {
   #heading1 {
     font-size: 3.5rem;
@@ -172,7 +171,6 @@ body {
   }
 }
 
-/* For very small screens (mobile) */
 @media (max-width: 600px) {
   #heading1 {
     font-size: 2.5rem;
