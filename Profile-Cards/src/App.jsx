@@ -17,20 +17,24 @@ function App() {
   return (
     <div>
       <h1>Employee Profile Page</h1>
-      <div>
+      <div className="cards-grid">
         {details.map(emp => (
-          <Cards 
-            key={emp.id} 
-            emp={emp} 
+          <Cards
+            key={emp.id}
+            emp={emp}
             viewProfile={() => setSelectedEmp(emp)}
         />
         ))}
       </div>
 
-      <ProfileView 
-        emp={selectedEmp}
-        onClose={() => setSelectedEmp(null)}
-      />
+      {selectedEmp && (
+        <div className="profileview-backdrop">
+          <ProfileView
+            emp={selectedEmp}
+            onClose={() => setSelectedEmp(null)}
+          />
+        </div>
+      )}
     </div>
   );
 }
