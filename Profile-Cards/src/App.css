@@ -1,123 +1,145 @@
 body {
-    background-color: aliceblue;
+  background-color: rgba(183, 202, 220, 0.58);
+}
+
+#heading1 {
+  font-size: 6rem;
+  text-align: center;
+  color: #da3848;
+}
+
+.heading2 {
+  font-size: 5rem;
+  text-align: center;
+  color: rgba(2, 2, 128, 0.906);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 0fr);
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card-container {
-    border-radius: 4px;
-    height: 300px;
-    width: 200px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 4px;
+  height: 350px;
+  width: 250px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.photo-section {
-    margin-bottom: 10px;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .photo-section img {
-    width: 100px;
-    height: 100px;
-    border-radius: 4px;
-    /* border-radius: 50%; */
-    object-fit: cover;
+  width: 250px;
+  height: 180px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
 }
 
 .content-section {
-    text-align: center;
+  text-align: center;
 }
 
 .content-section h4 {
-    margin: 5px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.content-section h5 {
+  margin: 5px 0;
+  font-size: 20px;
 }
 
 .content-section button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #ff4d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .content-section button:hover {
-    background-color: #0056b3;
+  background-color: #f12e14;
 }
 
 .profileview-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .profileview-container {
-    background-color: white;
-    border-radius: 4px;
-    padding: 20px;
-    max-width: 500px;
-    width: 90%;
-    text-align: center;
-    position: relative;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
 }
 
 .profileview-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .profileview-container h2 {
-    margin-bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 0 20px;
+  font-size: 50px;
 }
 
 .profileview-container p {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.395);
+  border-radius: 4px;
+  background-color: #ecebeb;
 }
 
 .profileview-container button {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #e3152a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .profileview-container button:hover {
-    background-color: #c82333;
+  background-color: #e15e6b;
 }

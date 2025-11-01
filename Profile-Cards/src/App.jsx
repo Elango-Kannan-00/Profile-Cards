@@ -16,7 +16,8 @@ function App() {
 
   return (
     <div>
-      <h1>Employee Profile Page</h1>
+      <h1 id="heading1">Welcome to EK's Employee Profile Dashboard !</h1>
+      <h1 className='heading2'>Employee Profile Page</h1>
       <div className="cards-grid">
         {details.map(emp => (
           <Cards
