@@ -7,7 +7,7 @@
     "location": "San Francisco, USA",
     "skills": ["Figma", "Sketch", "Photoshop"],
     "bio": "Creates clean and intuitive user interfaces.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "location": "New York, USA",
     "skills": ["React", "TypeScript", "Tailwind"],
     "bio": "Builds responsive and scalable web apps.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "location": "London, UK",
     "skills": ["Agile", "Scrum", "Roadmapping"],
     "bio": "Manages cross-functional teams to deliver products.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "location": "Berlin, Germany",
     "skills": ["Node.js", "Express", "MongoDB"],
     "bio": "Develops secure and efficient server-side APIs.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "location": "Toronto, Canada",
     "skills": ["React", "Node.js", "SQL"],
     "bio": "Builds complete web solutions from UI to backend.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "location": "Austin, USA",
     "skills": ["AWS", "Docker", "CI/CD"],
     "bio": "Automates deployment and manages infrastructure.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "location": "Singapore",
     "skills": ["SQL", "Python", "Tableau"],
     "bio": "Transforms data into meaningful insights.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "location": "Sydney, Australia",
     "skills": ["Flutter", "Dart", "Firebase"],
     "bio": "Builds fast and scalable mobile apps.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "location": "Madrid, Spain",
     "skills": ["SEO", "Copywriting", "Content Planning"],
     "bio": "Creates and manages digital content strategies.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   },
   {
     "id": 10,
@@ -97,6 +97,6 @@
     "location": "Dublin, Ireland",
     "skills": ["Network Security", "Penetration Testing", "Ethical Hacking"],
     "bio": "Secures systems and protects data from attacks.",
-    "image": "src/assets/Profile-image.png"
+    "image": "/Profile-image.png"
   }
 ]
