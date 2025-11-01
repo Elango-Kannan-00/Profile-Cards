@@ -1,18 +1,17 @@
 body {
-  background-color: rgba(183, 202, 220, 0.58);
+  background-color: rgb(222, 126, 126);
 }
 
 #heading1 {
   font-size: 6rem;
   text-align: center;
-  color: #da3848;
+  color: #000000;
 }
 
 .heading2 {
   font-size: 5rem;
   text-align: center;
-  color: rgba(2, 2, 128, 0.906);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .cards-grid {
@@ -28,25 +27,25 @@ body {
   border-radius: 4px;
   height: 350px;
   width: 250px;
-  background-color: white;
+  background-color: rgb(226, 221, 221);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-container:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .photo-section img {
   width: 250px;
   height: 180px;
-  border-radius: 4px;
+  border-radius: 8px;
   object-fit: cover;
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
@@ -58,7 +57,7 @@ body {
 }
 
 .content-section h4 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 5px 0;
   font-size: 30px;
 }
@@ -72,7 +71,7 @@ body {
   font-size: 16px;
   margin-top: 10px;
   padding: 10px 16px;
-  background-color: #ff4d00;
+  background-color: rgb(233, 83, 83);
   color: white;
   border: none;
   border-radius: 4px;
@@ -80,7 +79,8 @@ body {
 }
 
 .content-section button:hover {
-  background-color: #f12e14;
+  background-color: white;
+  color: rgb(219, 56, 56)
 }
 
 .profileview-backdrop {
@@ -89,7 +89,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,14 +113,14 @@ body {
 }
 
 .profileview-container h2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0 0 20px;
   font-size: 50px;
 }
 
 .profileview-container p {
   font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px 0;
   padding: 10px;
   border: 1px solid rgba(128, 128, 128, 0.395);
@@ -129,7 +129,7 @@ body {
 }
 
 .profileview-container button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   padding: 10px 20px;
   background-color: #e3152a;
@@ -141,5 +141,53 @@ body {
 }
 
 .profileview-container button:hover {
-  background-color: #e15e6b;
+  background-color: white;
+  border: 1px solid grey;
+  color: rgb(233, 83, 83)
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+  #heading1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .heading2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* For very small screens (mobile) */
+@media (max-width: 600px) {
+  #heading1 {
+    font-size: 2.5rem;
+  }
+
+  .heading2 {
+    font-size: 2rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card-container {
+    width: 80%;
+  }
 }
