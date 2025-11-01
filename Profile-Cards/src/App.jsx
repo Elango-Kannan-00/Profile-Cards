@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Cards from "./components/cards.jsx";
+import Cards from "./components/Cards.jsx";
 import "./App.css";
 import ProfileView from "./components/ProfileView.jsx";
 
